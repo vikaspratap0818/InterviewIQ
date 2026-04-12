@@ -44,7 +44,7 @@ async function startServer() {
     console.log("╔══════════════════════════════════════════════╗");
     console.log("║   AI Interview Platform — Backend Server     ║");
     console.log("╠══════════════════════════════════════════════╣");
-    console.log(`║  🚀 Server:  http://localhost:${PORT}           ║`);
+    console.log(`║  🚀 Server:  ${PORT}           ║`);
     console.log(`║  🌐 Frontend: ${FRONTEND_URL}          ║`);
     console.log(
       `║  🤖 Gemini:  ${process.env.GEMINI_API_KEY ? "✅ Configured" : "❌ NOT SET"}                   ║`,
@@ -61,9 +61,16 @@ app.use((req, res, next) => {
   console.log("🔥 Incoming:", req.method, req.url);
   next();
 });
+
+const allowedOrigins = [FRONTEND_URL];
+if (process.env.NODE_ENV !== "production") {
+  allowedOrigins.push("http://localhost:5173");
+  allowedOrigins.push("http://localhost:5174");
+}
+
 app.use(
   cors({
-    origin: [FRONTEND_URL, "http://localhost:5173", "http://localhost:5174"],
+    origin: allowedOrigins,
     credentials: true,
   }),
 );

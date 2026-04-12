@@ -121,7 +121,7 @@ A modern, AI-powered interview preparation platform designed to help candidates 
    npm run dev
    ```
 
-The application should now be running at `http://localhost:5173`.
+The application should now be running at `<FRONTEND_URL>`.
 
 ---
 

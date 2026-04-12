@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_ENV = "production"
+  # Omit these keys from secrets scanning as they cause many false positives (e.g., PORT=5000 matches timeouts)
+  SECRETS_SCAN_OMIT_KEYS = "PORT,NODE_ENV,FRONTEND_URL"
+
+# Configure secrets scanning to be less aggressive
+[[plugins]]
+  package = "@netlify/plugin-secrets-scan"
+  [plugins.inputs]
+    enabled = true
+    # Omit files that are documentation or examples
+    omit_paths = [
+      "README.md",
+      "server/.env.example",
+      "src/assets/brain.svg",
+      ".gitignore"
+    ]
