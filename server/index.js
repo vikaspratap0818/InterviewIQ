@@ -1,8 +1,13 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
+import path from "path";
+import { fileURLToPath } from "url";
 import { createServer } from "http";
 import { Server as SocketIOServer } from "socket.io";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Prevent crashes by handling uncaught exceptions
 process.on("uncaughtException", (err) => {
@@ -166,6 +171,19 @@ io.on("connection", (socket) => {
 
 // Make io available to routes via app
 app.set("io", io);
+
+// ── Production Static Serving ─────────────────────────────
+if (process.env.NODE_ENV === "production") {
+  const distPath = path.join(__dirname, "../dist");
+  app.use(express.static(distPath));
+
+  app.get("*", (req, res) => {
+    // Only serve index.html if the request isn't for an API route
+    if (!req.path.startsWith("/api")) {
+      res.sendFile(path.join(distPath, "index.html"));
+    }
+  });
+}
 
 // ── Error Handler (must be last) ─────────────────────────
 app.use(errorHandler);

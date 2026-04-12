@@ -58,21 +58,16 @@ A modern, AI-powered interview preparation platform designed to help candidates 
 > **Note**: Add your screenshots to a `docs/screenshots` folder to display them here.
 
 ### 1. **Dashboard & Analytics**
- <img width="1912" height="917" alt="Screenshot 2026-04-12 214847" src="https://github.com/user-attachments/assets/461986b7-1c52-4514-817f-ce29d1220782" />
+![Dashboard Placeholder](https://via.placeholder.com/800x450?text=Dashboard+%26+Analytics)
 *Track your progress and review past interview performance.*
 
 ### 2. **Resume Upload & Context**
-<img width="1919" height="879" alt="Screenshot 2026-04-12 214906" src="https://github.com/user-attachments/assets/2e0e8942-9e9f-4c9f-b99c-68548fd4b8a5" />
-
+![Setup Placeholder](https://via.placeholder.com/800x450?text=Interview+Setup)
 *Upload your resume to personalize your interview experience.*
 
 ### 3. **Live AI Interview**
-<img width="1919" height="917" alt="image" src="https://github.com/user-attachments/assets/2a7f6885-4652-418c-9039-05cae4f08519" />
-
+![Interview Placeholder](https://via.placeholder.com/800x450?text=Live+AI+Interview)
 *Practice in real-time with an AI interviewer and integrated code editor.*
-
-<img width="1918" height="918" alt="Screenshot 2026-04-12 214951" src="https://github.com/user-attachments/assets/483a9221-1c6e-4d62-8806-d97beab40efd" />
-*AI Voice interview where Voice to text and text to voice will questioning and Answering*
 
 ---
 
