@@ -1,4 +1,4 @@
-# AI Interview Platform 🚀
+# AI Interview Platform 
 
 A modern, AI-powered interview preparation platform designed to help candidates practice their skills through realistic, role-specific simulations. This platform combines a Resume Extraction Engine, AI Interviewer, and Live Voice Practice to provide an immersive interview experience.
 
@@ -58,16 +58,31 @@ A modern, AI-powered interview preparation platform designed to help candidates 
 > **Note**: Add your screenshots to a `docs/screenshots` folder to display them here.
 
 ### 1. **Dashboard & Analytics**
-![Dashboard Placeholder](https://via.placeholder.com/800x450?text=Dashboard+%26+Analytics)
+<img width="1912" height="917" alt="Screenshot 2026-04-12 214847" src="https://github.com/user-attachments/assets/d9195e14-9f1d-4b39-926d-7385988a31d5" />
+
 *Track your progress and review past interview performance.*
+---
 
 ### 2. **Resume Upload & Context**
-![Setup Placeholder](https://via.placeholder.com/800x450?text=Interview+Setup)
+<img width="1919" height="879" alt="Screenshot 2026-04-12 214906" src="https://github.com/user-attachments/assets/0d2d677c-d441-472e-8d0a-33a0d983d9e0" />
+
 *Upload your resume to personalize your interview experience.*
+---
+
+<img width="1919" height="903" alt="Screenshot 2026-04-12 214922" src="https://github.com/user-attachments/assets/1a2bbdd5-e260-4139-bf28-0f1ab4f996e4" />
+
+*After Selecting resume and role we'll Select the interviewer persona*
+---
 
 ### 3. **Live AI Interview**
-![Interview Placeholder](https://via.placeholder.com/800x450?text=Live+AI+Interview)
+<img width="1919" height="917" alt="Screenshot 2026-04-12 215300" src="https://github.com/user-attachments/assets/839a0dfe-5dbf-4213-bb41-9182127ab5a4" />
+
+
 *Practice in real-time with an AI interviewer and integrated code editor.*
+---
+
+<img width="1918" height="918" alt="Screenshot 2026-04-12 214951" src="https://github.com/user-attachments/assets/c7ea6853-494a-456c-a5e0-d78f8507bcb7" />
+
 
 ---
 
